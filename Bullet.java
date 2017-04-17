@@ -14,6 +14,12 @@ public class Bullet extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        if(this.getX() >= getWorld().getWidth() - 20){
+            getWorld().removeObject(this);
+            //System.out.println("dis bullet deid");
+        }
+        else{
+            setLocation(getX() + 10, getY());
+        }
     }    
 }
