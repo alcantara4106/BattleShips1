@@ -1,4 +1,5 @@
 import greenfoot.*;
+import java.util.List;
 /**
  * Write a description of class NormalBoat here.
  * 
@@ -18,6 +19,6 @@ public class NormalBoat extends Ship
             getWorld().addObject(bullet,getX()+100,getY());
             pause = 30;
         }
-        if(pause > 0)pause --;
+        if(pause > 0)pause --;        
     }
 }
