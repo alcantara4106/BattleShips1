@@ -14,15 +14,16 @@ public class Bullet extends Actor
      */
     public void act() 
     {
+        /*
         List<VictimBoat>targets = getObjectsInRange(50,VictimBoat.class);
-        /* The above line checks if any objects are in a 50 pixel radius. The boats are about
-           100 x 100 so 50 should be work (only detects the center of the sprite, not the
-           edges)*/
+        
         if (targets!=null) {
             for (VictimBoat b : targets) {
                 getWorld().removeObject(b);
             }            
-        } 
+        } */
+        
+        //Checks if bullet went outside the window and deletes it if it is
         if(this.getX() >= getWorld().getWidth() - 20){
             getWorld().removeObject(this);
             //System.out.println("dis bullet deid");

@@ -1,4 +1,5 @@
 import greenfoot.*;
+import java.util.List;
 /**
  * Write a description of class VictimBoat here.
  * 
@@ -8,6 +9,15 @@ import greenfoot.*;
 public class VictimBoat extends Ship
 {
     public void act(){
-
+        List<Bullet>targets = getObjectsInRange(50,Bullet.class);
+        /* The above line checks if any objects are in a 50 pixel radius. The boats are about
+           100 x 100 so 50 should be work (only detects the center of the sprite, not the
+           edges)*/
+        for(Bullet bullet:targets){
+            this.setHealth(this.getHealth() - 1); //Removes 1 health point
+        }
+        if(this.getHealth() <= 0){
+            getWorld().removeObject(this);
+        }
     }
 }
