@@ -14,14 +14,15 @@ public class Bullet extends Actor
      */
     public void act() 
     {
-        /*
+        
         List<VictimBoat>targets = getObjectsInRange(50,VictimBoat.class);
         
         if (targets!=null) {
             for (VictimBoat b : targets) {
-                getWorld().removeObject(b);
+                b.setHealth(b.getHealth() - 1);
             }            
-        } */
+            getWorld().removeObject(this);
+        } 
         
         //Checks if bullet went outside the window and deletes it if it is
         if(this.getX() >= getWorld().getWidth() - 20){
