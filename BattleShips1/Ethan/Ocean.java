@@ -37,5 +37,9 @@ public class Ocean extends World
         addObject(vboom2, 169, 29);
         Hboom hboom3 = new Hboom();
         addObject(hboom3, 41, 152);
+        NormalBoat boat = new NormalBoat();
+        addObject(boat, 150, 300);
+        VictimBoat boat2 = new VictimBoat();
+        addObject(boat2, 450, 300);
     }
 }

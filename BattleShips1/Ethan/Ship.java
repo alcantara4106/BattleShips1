@@ -1,5 +1,5 @@
 import greenfoot.*;
-
+import java.util.List;
 /**
  * Write a description of class Ship here.
  * 
@@ -8,6 +8,7 @@ import greenfoot.*;
  */
 public abstract class Ship extends Actor
 {
+    private int health = 3;    
     /**
      * Act - do whatever the Ship wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -16,4 +17,10 @@ public abstract class Ship extends Actor
     {
         // Add your action code here.
     }    
+    public int getHealth(){
+        return health;
+    }
+    public void setHealth(int newHealth){
+        health += newHealth;
+    }
 }
