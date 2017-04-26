@@ -20,7 +20,7 @@ public class NormalBoat extends Ship
             pause = 30;
         }
         if(Greenfoot.isKeyDown("f")){
-            System.out.println("X: " + this.getX() + " Y: " + this.getY());
+            System.out.println("X: " + this.getX() + " ");
         }
         if(pause > 0)pause --;        
     }

@@ -14,6 +14,7 @@ public class Bullet extends Actor
      */
     
     boolean instanceExists;
+    int delay = 10;
     public void act() 
     {
         instanceExists = true;
@@ -24,19 +25,27 @@ public class Bullet extends Actor
                 b.setHealth(b.getHealth() - 1);
                 System.out.println(b);
             }            
-            //instanceExists = false;
+            System.out.println("detected a victim boat");
+            instanceExists = false;
         } 
         
         //Checks if bullet went outside the window and deletes it if it is
         if(this.getX() >= getWorld().getWidth() - 20){
             instanceExists = false;
-            //System.out.println("dis bullet deid");
+            System.out.println("dis bullet deid");
         }
         else{
             setLocation(getX() + 5, getY());
         }
         if(instanceExists == false){
-            getWorld().removeObject(this);
+            if(delay <= 0){
+                getWorld().removeObject(this);
+                delay = 10;
+            }
+            else{
+                delay --;
+            }
         }
+        System.out.println(delay);
     }    
 }
