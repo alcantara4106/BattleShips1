@@ -1,6 +1,6 @@
 #Greenfoot properties
-#Mon Apr 24 12:15:53 PDT 2017
-editor.fx.0.height=700
+#Wed Apr 26 11:25:30 PDT 2017
+editor.fx.0.height=1050
 target2.width=90
 target8.name=Ocean
 target11.y=190
@@ -57,8 +57,8 @@ target1.naviview.expanded=true
 target11.type=ClassTarget
 class.BlueDestroyer.image=bluedestroyer.png
 version=2.8.0
-editor.fx.0.y=0
-editor.fx.0.x=0
+editor.fx.0.y=-9
+editor.fx.0.x=-9
 editor.swing.2.y=0
 dependency6.to=Ship
 target2.showInterface=false
@@ -84,9 +84,9 @@ target6.name=NormalBoat
 target6.naviview.expanded=true
 target9.height=50
 target12.y=250
-editor.swing.1.width=961
+editor.swing.1.width=960
 target12.x=10
-editor.fx.0.width=700
+editor.fx.0.width=1938
 target11.showInterface=false
 target10.y=130
 target10.x=200
@@ -150,7 +150,7 @@ target6.width=90
 target10.height=50
 target7.width=80
 editor.swing.1.y=0
-editor.swing.1.x=0
+editor.swing.1.x=960
 dependency3.from=NormalBoat
 target1.typeParameters=
 target3.width=100

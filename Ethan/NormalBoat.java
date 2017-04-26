@@ -19,6 +19,9 @@ public class NormalBoat extends Ship
             getWorld().addObject(bullet,getX()+100,getY());
             pause = 30;
         }
+        if(Greenfoot.isKeyDown("f")){
+            System.out.println("X: " + this.getX() + " Y: " + this.getY());
+        }
         if(pause > 0)pause --;        
     }
 }
