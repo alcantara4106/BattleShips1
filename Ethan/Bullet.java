@@ -20,10 +20,10 @@ public class Bullet extends Actor
         instanceExists = true;
         List<VictimBoat>targets = getIntersectingObjects(VictimBoat.class);
         
-        if (targets!=null) {
+        if (targets.isEmpty() != true) {
             for (VictimBoat b : targets) {
                 b.setHealth(b.getHealth() - 1);
-                System.out.println(b);
+                //System.out.println(b);
             }            
             System.out.println("detected a victim boat");
             instanceExists = false;
@@ -38,13 +38,15 @@ public class Bullet extends Actor
             setLocation(getX() + 5, getY());
         }
         if(instanceExists == false){
+            getWorld().removeObject(this);
+            /*
             if(delay <= 0){
                 getWorld().removeObject(this);
                 delay = 10;
             }
             else{
                 delay --;
-            }
+            }*/
         }
         System.out.println(delay);
     }    
