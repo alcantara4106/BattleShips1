@@ -15,6 +15,11 @@ public class NormalBoat extends Ship
         if(Greenfoot.isKeyDown("left")){setLocation(getX() - 5, getY());}
         if(Greenfoot.isKeyDown("down")){setLocation(getX(), getY() + 5);}
         if(Greenfoot.isKeyDown("space") && pause <= 0){
+            RedBullet bullet = new RedBullet();
+            getWorld().addObject(bullet,getX()+100,getY());
+            pause = 30;
+        }
+        if(Greenfoot.isKeyDown("M") && pause <= 0){
             Bullet bullet = new Bullet();
             getWorld().addObject(bullet,getX()+100,getY());
             pause = 30;

@@ -8,5 +8,7 @@ import greenfoot.*;
  */
 public interface ShipActions 
 {
-    
+    public int getHealth();
+    public void setHealth(int newHealth);
+    public void healthSprite(String name);
 }

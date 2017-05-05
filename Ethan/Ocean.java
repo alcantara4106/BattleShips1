@@ -8,7 +8,6 @@ import greenfoot.*;
  */
 public class Ocean extends World
 {
-
     /**
      * Constructor for objects of class Ocean.
      * 
@@ -39,7 +38,7 @@ public class Ocean extends World
         addObject(hboom3, 41, 152);
         NormalBoat boat = new NormalBoat();
         addObject(boat, 150, 300);
-        VictimBoat boat2 = new VictimBoat();
-        addObject(boat2, 450, 300);
+        BlueShip boat3 = new BlueShip();
+        addObject(boat3, 450, 300);
     }
 }

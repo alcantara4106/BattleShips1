@@ -22,6 +22,8 @@ public class VictimBoat extends Ship
         if(this.getHealth() <= 0){
             getWorld().removeObject(this);
         }*/
+        
+        //setImage("victimboat" + this.getHealth() + ".png");
         if(this.getHealth() == 3){
             setImage("victimboat.png");
         }
@@ -35,11 +37,5 @@ public class VictimBoat extends Ship
             getWorld().removeObject(this);
         }
         
-    }
-    public int getHealth(){
-        return this.health;
-    }
-    public void setHealth(int newHealth){
-        this.health = newHealth;
-    }
+    }   
 }

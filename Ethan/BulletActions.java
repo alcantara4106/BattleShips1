@@ -8,5 +8,6 @@ import greenfoot.*;
  */
 public interface BulletActions 
 {
-      
+      void move(int speed);
+      void checkCollision();
 }
