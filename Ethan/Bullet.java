@@ -13,6 +13,7 @@ public class Bullet extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
+    private int direction, speed;
     boolean instanceExists;
     int delay = 10;
     public void act() 
@@ -49,5 +50,14 @@ public class Bullet extends Actor
             }*/
         }
         System.out.println(delay);
-    }    
+        
+        setRotation(direction);
+    }
+    
+    public Bullet(int dir)
+    {
+        direction = dir;
+        speed = 15;
+    }
+    
 }
